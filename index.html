@@ -19,10 +19,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body onload="entries()">
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -30,9 +31,88 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- 9am -->
+        <div class="row">
+          <span class="hour col-1">09:00 am</span>
+          <textarea class="col-10"  id="9entry" name="text"></textarea>
+          <button class="saveBtn col-1" onclick="save9()"><i class="fas fa-arrow-circle-up"></i></button>
+        </div>
+
+        <!-- 10am -->
+        <div class="row">
+          <span class="hour col-1">10:00 am</span>
+          <textarea class="col-10"  id="10entry" name="text"></textarea>
+          <button class="saveBtn col-1" onclick="save10()"><i class="fas fa-arrow-circle-up"></i></button>
+        </div>
+
+        <!-- 11am -->
+        <div class="row">
+          <span class="hour col-1">11:00 am</span>
+          <textarea class="col-10"  id="11entry" name="text"></textarea>
+          <button class="saveBtn col-1" onclick="save11()"><i class="fas fa-arrow-circle-up"></i></button>
+        </div>
+
+        <!-- 12pm -->
+        <div class="row">
+          <span class="hour col-1">12:00 pm</span>
+          <textarea class="col-10"  id="12entry" name="text"></textarea>
+          <button class="saveBtn col-1" onclick="save12()"><i class="fas fa-arrow-circle-up"></i></button>
+        </div>
+
+        <!-- 1pm -->
+        <div class="row">
+          <span class="hour col-1">01:00 pm</span>
+          <textarea class="col-10"  id="1entry" name="text"></textarea>
+          <button class="saveBtn col-1" onclick="save1()"><i class="fas fa-arrow-circle-up"></i></button>
+        </div>
+
+        <!-- 2pm -->
+        <div class="row">
+          <span class="hour col-1">02:00 pm</span>
+          <textarea class="col-10"  id="2entry" name="text"></textarea>
+          <button class="saveBtn col-1" onclick="save2()"><i class="fas fa-arrow-circle-up"></i></button>
+        </div>
+
+        <!-- 3pm -->
+        <div class="row">
+          <span class="hour col-1">03:00 pm</span>
+          <textarea class="col-10"  id="3entry" name="text"></textarea>
+          <button class="saveBtn col-1" onclick="save3()"><i class="fas fa-arrow-circle-up"></i></button>
+        </div>
+
+        <!-- 4pm -->
+        <div class="row">
+          <span class="hour col-1">04:00 pm</span>
+          <textarea class="col-10"  id="4entry" name="text"></textarea>
+          <button class="saveBtn col-1" onclick="save4()"><i class="fas fa-arrow-circle-up"></i></button>
+        </div>
+
+        <!-- 5pm -->
+        <div class="row">
+          <span class="hour col-1">05:00 pm</span>
+          <textarea class="col-10"  id="5entry" name="text"></textarea>
+          <button class="saveBtn col-1" onclick="save5()"><i class="fas fa-arrow-circle-up"></i></button>
+        </div>
+
+        <!-- 6pm -->
+        <div class="row">
+          <span class="hour col-1">06:00 pm</span>
+          <textarea class="col-10"  id="6entry" name="text"></textarea>
+          <button class="saveBtn col-1" onclick="save6()"><i class="fas fa-arrow-circle-up"></i></button>
+        </div>
+
+        <!-- 7pm -->
+        <div class="row">
+          <span class="hour col-1">07:00 pm</span>
+          <textarea class="col-10"  id="7entry" name="text"></textarea>
+          <button class="saveBtn col-1" onclick="save7()"><i class="fas fa-arrow-circle-up"></i></button>
+        </div>
+
+    </div>
+    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./js.js"></script>
   </body>
 </html>
